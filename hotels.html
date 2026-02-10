@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Hotels</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item active">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+
+            <div class="search-widget">
+                <div class="search-options">
+                    <div class="radio-group">
+                        <label><input type="radio" name="hotel-type" checked> Domestic</label>
+                        <label><input type="radio" name="hotel-type"> International</label>
+                    </div>
+                </div>
+
+                <div class="search-inputs">
+                    <div class="input-box" style="flex: 2;">
+                        <label class="input-label">CITY, PROPERTY NAME OR LOCATION</label>
+                        <input type="text" class="input-value" value="Goa">
+                        <div class="input-sub">India</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">CHECK-IN</label>
+                        <div class="input-value">05 Feb 24</div>
+                        <div class="input-sub">Monday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">CHECK-OUT</label>
+                        <div class="input-value">06 Feb 24</div>
+                        <div class="input-sub">Tuesday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">ROOMS & GUESTS</label>
+                        <div class="input-value">1 Room, 2 Adults</div>
+                        <div class="input-sub">Tap to add guests</div>
+                    </div>
+                </div>
+
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+
+        <section class="destinations" style="margin-top: 80px;">
+            <h2 class="latoBold blackText">Handpicked Collections for You</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=500&q=80"
+                        alt="Luxury">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Luxury Stays</h4>
+                        <p>Best of the best</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=500&q=80"
+                        alt="Beach">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Beach Resorts</h4>
+                        <p>Sun, sand & sea</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=500&q=80"
+                        alt="Boutique">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Boutique Hotels</h4>
+                        <p>Unique & intimate</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=500&q=80"
+                        alt="Business">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Business Hotels</h4>
+                        <p>Stay productive</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <h2 class="latoBold blackText">Unbeatable Hotel Deals</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=300&q=80"
+                        class="offer-img" alt="Offer">
+                    <div class="offer-details">
+                        <h3 class="latoBold">Flat 25% OFF on Luxury Stays</h3>
+                        <p>Exclusive for TravelGo Gold Members</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1551882547-ff43c63efe5d?auto=format&fit=crop&w=300&q=80"
+                        class="offer-img" alt="Offer">
+                    <div class="offer-details">
+                        <h3 class="latoBold">Buy 2 Nights, Get 1 Free</h3>
+                        <p>Available at select 5-star properties</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p style="text-align: center;">© 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+
+    <script src="common.js"></script>
+</body>
+
+</html>

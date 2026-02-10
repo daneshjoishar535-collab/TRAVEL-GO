@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item"><i class="fas fa-percentage"></i><span>Super Offers</span></a>
+            <a href="#" class="nav-item"><i class="fas fa-briefcase"></i><span>Introducing myBiz</span></a>
+            <a href="#" class="nav-item"><i class="fas fa-suitcase"></i><span>My Trips</span></a>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="login-card">
+            <div class="login-banner">
+                <h2>Sign up now to join the <br>millions of happy travellers!</h2>
+            </div>
+            <div class="login-form-area">
+                <div class="login-tabs">
+                    <div class="login-tab active">Personal Account</div>
+                    <div class="login-tab">MyBiz Account</div>
+                </div>
+
+                <div class="input-group">
+                    <label>Login/Signup</label>
+                    <div class="phone-input">
+                        <div class="country-code">
+                            <img src="https://flagcdn.com/w20/in.png" alt="IN" width="20">
+                            <span>+91</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                        <input type="text" placeholder="Enter Mobile Number">
+                    </div>
+                </div>
+
+                <button class="continue-btn">Continue</button>
+
+                <div class="social-login">
+                    <div class="social-title">Or Login/Signup With</div>
+                    <div class="social-icons">
+                        <div class="social-icon" title="Google">
+                            <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google"
+                                width="24">
+                        </div>
+                        <div class="social-icon" title="Email">
+                            <i class="fas fa-envelope" style="color: #9b9b9b;"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <p style="font-size: 11px; text-align: center; margin-top: 30px; color: #9b9b9b;">
+                    By proceeding, you agree to TravelGo's <a href="#">T&Cs</a> and <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" style="text-align: center; padding: 40px;">
+        <p>© 2024 TRAVELGO PVT. LTD.</p>
+    </footer>
+
+    <script src="common.js"></script>
+    <script>
+        // Tab Switching Logic
+        const tabs = document.querySelectorAll('.login-tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+
+        // Redirection Logic
+        const continueBtn = document.querySelector('.continue-btn');
+        const phoneInput = document.querySelector('.phone-input input');
+
+        const validatePhone = () => {
+            if (phoneInput.value.length >= 10) {
+                continueBtn.classList.add('active');
+            } else {
+                continueBtn.classList.remove('active');
+            }
+        };
+
+        continueBtn.addEventListener('click', () => {
+            if (continueBtn.classList.contains('active')) {
+                // Show a fake loading state
+                continueBtn.textContent = 'LOGGING IN...';
+                continueBtn.style.pointerEvents = 'none';
+
+                setTimeout(() => {
+                    localStorage.setItem('isLoggedIn', 'true');
+                    window.location.href = 'index.html';
+                }, 1000);
+            } else {
+                alert('Please enter a valid 10-digit mobile number');
+            }
+        });
+
+        // Use multiple events for cross-browser reliability
+        phoneInput.addEventListener('input', validatePhone);
+        phoneInput.addEventListener('keyup', validatePhone);
+        phoneInput.addEventListener('change', validatePhone);
+
+        // Initial validation in case of autofill
+        validatePhone();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Flights, Hotels, Trains & more</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item active">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+
+            <div class="search-widget">
+                <div class="search-options">
+                    <div class="radio-group">
+                        <label><input type="radio" name="trip" checked> One Way</label>
+                        <label><input type="radio" name="trip"> Round Trip</label>
+                        <label><input type="radio" name="trip"> Multi City</label>
+                    </div>
+                </div>
+
+                <div class="search-inputs" style="position: relative;">
+                    <div class="input-box active" id="from-box">
+                        <label class="input-label">FROM</label>
+                        <input type="text" class="input-value" value="Delhi" id="from-city" autocomplete="off">
+                        <div class="input-sub" id="from-sub">DEL, Delhi Airport India</div>
+
+                        <!-- Location Suggestion Modal -->
+                        <div class="suggestion-modal" id="from-suggestions">
+                            <div class="suggestion-header">Suggestions</div>
+                            <div class="suggestion-list">
+                                <div class="suggestion-group">
+                                    <div class="suggestion-group-title">Visa-Free Destinations</div>
+                                    <div class="tag-grid">
+                                        <span class="city-tag" data-city="Manila"
+                                            data-sub="MNL, Philippines">Manila</span>
+                                        <span class="city-tag" data-city="Male" data-sub="MLE, Maldives">Male</span>
+                                        <span class="city-tag" data-city="Colombo"
+                                            data-sub="CMB, Sri Lanka">Colombo</span>
+                                        <span class="city-tag" data-city="Mauritius"
+                                            data-sub="MRU, Mauritius">Mauritius</span>
+                                        <span class="city-tag" data-city="Hong Kong" data-sub="HKG, Hong Kong">Hong
+                                            Kong</span>
+                                    </div>
+                                </div>
+                                <div class="suggestion-group">
+                                    <div class="suggestion-group-title">Popular Cities</div>
+                                    <div class="tag-grid">
+                                        <span class="city-tag" data-city="Mumbai"
+                                            data-sub="BOM, Chhatrapati Shivaji Intl">Mumbai</span>
+                                        <span class="city-tag" data-city="Bangkok"
+                                            data-sub="BKK, Suvarnabhumi">Bangkok</span>
+                                        <span class="city-tag" data-city="Dubai" data-sub="DXB, Dubai Intl">Dubai</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="swap-icon" id="swap-locations">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+
+                    <div class="input-box" id="to-box">
+                        <label class="input-label">TO</label>
+                        <input type="text" class="input-value" value="Bengaluru" id="to-city" autocomplete="off">
+                        <div class="input-sub" id="to-sub">BLR, Kempegowda Intl Airport</div>
+
+                        <!-- Suggestion modal for To field as well -->
+                        <div class="suggestion-modal" id="to-suggestions">
+                            <div class="suggestion-header">Suggestions</div>
+                            <div class="suggestion-list">
+                                <div class="suggestion-group">
+                                    <div class="suggestion-group-title">Trending Destinations</div>
+                                    <div class="tag-grid">
+                                        <span class="city-tag" data-city="Paris"
+                                            data-sub="CDG, Charles de Gaulle">Paris</span>
+                                        <span class="city-tag" data-city="London" data-sub="LHR, Heathrow">London</span>
+                                        <span class="city-tag" data-city="Tokyo"
+                                            data-sub="NRT, Narita Intl">Tokyo</span>
+                                        <span class="city-tag" data-city="New York" data-sub="JFK, John F Kennedy">New
+                                            York</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-box" id="departure-box">
+                        <label class="input-label">DEPARTURE</label>
+                        <div class="input-value" id="dep-val">05 Feb 24</div>
+                        <div class="input-sub" id="dep-day">Monday</div>
+
+                        <!-- Calendar Modal -->
+                        <div class="calendar-modal" id="cal-modal">
+                            <div class="calendar-grid">
+                                <div class="month-view">
+                                    <div class="month-title">February 2024</div>
+                                    <div class="days-of-week">
+                                        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                                    </div>
+                                    <div class="days-grid">
+                                        <div class="day-item empty"></div>
+                                        <div class="day-item empty"></div>
+                                        <div class="day-item empty"></div>
+                                        <div class="day-item empty"></div>
+                                        <div class="day-item"><span class="day-num">1</span><span
+                                                class="day-price">₹4,500</span></div>
+                                        <div class="day-item"><span class="day-num">2</span><span
+                                                class="day-price">₹4,200</span></div>
+                                        <div class="day-item"><span class="day-num">3</span><span
+                                                class="day-price">₹3,900</span></div>
+                                        <div class="day-item selected"><span class="day-num">4</span><span
+                                                class="day-price">₹4,100</span></div>
+                                        <div class="day-item"><span class="day-num">5</span><span
+                                                class="day-price">₹3,800</span></div>
+                                        <!-- ... more days -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="input-label">RETURN</label>
+                        <div class="input-value">--</div>
+                        <div class="input-sub">Tap to add return date</div>
+                    </div>
+
+                    <div class="input-box" id="traveller-box">
+                        <label class="input-label">TRAVELLERS & CLASS</label>
+                        <div class="input-value" id="trav-val">1 Traveller</div>
+                        <div class="input-sub" id="class-val">Economy</div>
+
+                        <!-- Traveller & Class Modal -->
+                        <div class="traveller-modal" id="trav-modal">
+                            <div class="traveller-section">
+                                <div class="traveller-label">ADULTS (12y +)</div>
+                                <div class="traveller-sub">on the day of travel</div>
+                                <div class="selector-grid" data-type="adults">
+                                    <span class="selector-item active">1</span>
+                                    <span class="selector-item">2</span>
+                                    <span class="selector-item">3</span>
+                                    <span class="selector-item">4</span>
+                                    <span class="selector-item">5</span>
+                                    <span class="selector-item">6</span>
+                                    <span class="selector-item">7</span>
+                                    <span class="selector-item">8</span>
+                                    <span class="selector-item">9</span>
+                                    <span class="selector-item">>9</span>
+                                </div>
+                            </div>
+                            <div style="display: flex; gap: 30px;">
+                                <div class="traveller-section">
+                                    <div class="traveller-label">CHILDREN (2y - 12y)</div>
+                                    <div class="traveller-sub">on the day of travel</div>
+                                    <div class="selector-grid" data-type="children">
+                                        <span class="selector-item active">0</span>
+                                        <span class="selector-item">1</span>
+                                        <span class="selector-item">2</span>
+                                        <span class="selector-item">3</span>
+                                        <span class="selector-item">4</span>
+                                        <span class="selector-item">5</span>
+                                        <span class="selector-item">6</span>
+                                    </div>
+                                </div>
+                                <div class="traveller-section">
+                                    <div class="traveller-label">INFANTS (below 2y)</div>
+                                    <div class="traveller-sub">on the day of travel</div>
+                                    <div class="selector-grid" data-type="infants">
+                                        <span class="selector-item active">0</span>
+                                        <span class="selector-item">1</span>
+                                        <span class="selector-item">2</span>
+                                        <span class="selector-item">3</span>
+                                        <span class="selector-item">4</span>
+                                        <span class="selector-item">5</span>
+                                        <span class="selector-item">6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="traveller-section">
+                                <div class="traveller-label">CHOOSE TRAVEL CLASS</div>
+                                <div class="travel-class-grid">
+                                    <div class="class-item active">Economy</div>
+                                    <div class="class-item">Premium Economy</div>
+                                    <div class="class-item">Business</div>
+                                    <div class="class-item">First Class</div>
+                                </div>
+                            </div>
+                            <button class="apply-btn" id="apply-travellers">APPLY</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="special-fares"
+                    style="margin-top: 20px; display: flex; align-items: center; gap: 15px; font-size: 12px; color: #4a4a4a; font-weight: 700;">
+                    <span>Select A Special Fare</span>
+                    <label
+                        style="background: #f2f2f2; padding: 5px 10px; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        <input type="checkbox"> Student
+                    </label>
+                    <label
+                        style="background: #f2f2f2; padding: 5px 10px; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        <input type="checkbox"> Senior Citizen
+                    </label>
+                    <label
+                        style="background: #f2f2f2; padding: 5px 10px; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        <input type="checkbox"> Armed Forces
+                    </label>
+                    <label
+                        style="background: #f2f2f2; padding: 5px 10px; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                        <input type="checkbox"> Doctor & Nurses
+                    </label>
+                </div>
+
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+
+        <section class="explore-more">
+            <div class="explore-header">
+                <img src="https://promos.makemytrip.com/Growth/Images/B2C/2x/dt_tert_downArrow.png" alt="icon"
+                    style="height: 20px;">
+                <h2 class="font14 latoBold">Explore More</h2>
+            </div>
+            <div class="explore-grid">
+                <a href="#" class="explore-item">
+                    <img src="https://promos.makemytrip.com/appfest/1x/ic_home_tertiary_where2go.png"
+                        class="explore-icon" alt="W2G">
+                    <div class="explore-info">
+                        <h3>Where2Go</h3>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <img src="https://promos.makemytrip.com/appfest/1x/ic_home_tertiary_howtogo.png"
+                        class="explore-icon" alt="H2G">
+                    <div class="explore-info">
+                        <h3>How2Go</h3>
+                        <p>Find routes to anywhere</p>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <img src="https://promos.makemytrip.com/appfest/1x/ic_home_tertiary_travelcard.png"
+                        class="explore-icon" alt="Card">
+                    <div class="explore-info">
+                        <h3 class="latoBold blackText">TravelGo Rewards</h3>
+                        <p>Never-expiring points</p>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <img src="https://promos.makemytrip.com/appfest/1x/ic_home_tertiary_mice.png" class="explore-icon"
+                        alt="Mice">
+                    <div class="explore-info">
+                        <h3>MICE</h3>
+                        <p>Offsites & Events</p>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <img src="https://promos.makemytrip.com/appfest/1x/ic_home_tertiary_giftcards.png"
+                        class="explore-icon" alt="Gift">
+                    <div class="explore-info">
+                        <h3>Gift Cards</h3>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <div class="explore-icon-fa">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="explore-info">
+                        <h3>Forex</h3>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <div class="explore-icon-fa">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <div class="explore-info">
+                        <h3>Visa</h3>
+                    </div>
+                </a>
+                <a href="#" class="explore-item">
+                    <div class="explore-icon-fa">
+                        <i class="fas fa-briefcase-medical"></i>
+                    </div>
+                    <div class="explore-info">
+                        <h3>Insurance</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <h2 class="latoBold blackText" style="margin-bottom: 20px;">Exclusive Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1620912189865-1e8a33da4c5e?auto=format&fit=crop&w=300&q=80"
+                        class="offer-img" alt="Offer">
+                    <div class="offer-details">
+                        <h3 class="latoBold">LIVE NOW: TravelGo World Sale</h3>
+                        <p>Up to 25% OFF* on International Flights.</p>
+                    </div>
+                </div>
+                <div class="offer-card pd-15 border-radius-10 flex">
+                    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?auto=format&fit=crop&w=300&q=80"
+                        alt="Coupon">
+                    <div class="offer-details">
+                        <p class="greyText latoBold font12">TRAVELGO SPECIAL</p>
+                        <h3 class="latoBold font18">Flat 25% OFF on Domestic Flights</h3>
+                        <p class="greyText font14">Valid for first-time users only. Use code: TRAVELGO25</p>
+                    </div>
+                </div>
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?auto=format&fit=crop&w=300&q=80"
+                        class="offer-img" alt="Offer">
+                    <div class="offer-details">
+                        <h3 class="latoBold">Forex Special Offer</h3>
+                        <p>Get the best rates with TravelGo Forex!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2 class="latoBold blackText">Why Choose TravelGo?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Secure Bookings</h3>
+                    <p>Your transactions are 100% safe and secure with us.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated team is here to help you anytime, anywhere.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-tags"></i>
+                    <h3>Best Prices</h3>
+                    <p>Get exclusive deals and the lowest fares guaranteed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations">
+            <h2 class="latoBold blackText">Popular Destinations</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=500&q=80"
+                        alt="Goa">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Goa</h4>
+                        <p>Beach Paradise</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1580105142577-98b7a439fbea?auto=format&fit=crop&w=500&q=80"
+                        alt="Agra">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Agra</h4>
+                        <p>City of Love</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=500&q=80"
+                        alt="Maldives">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Maldives</h4>
+                        <p>Island Heaven</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=500&q=80"
+                        alt="Bali">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Bali</h4>
+                        <p>Tropical Bliss</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelGo</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Flight Bookings</li>
+                    <li>Hotel Bookings</li>
+                    <li>Holiday Packages</li>
+                    <li>Trains & Buses</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                    <li>Cancellation & Refunds</li>
+                    <li>Travel Guide</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons" style="justify-content: flex-start; gap: 15px; margin-top: 10px;">
+                    <i class="fab fa-facebook-f" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-twitter" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-instagram" style="color: #b2b2b2; cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <p
+            style="margin-top: 40px; text-align: center; color: #b2b2b2; border-top: 1px solid #1a2b4d; padding-top: 20px;">
+            © 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+
+    <script src="common.js"></script>
+</body>
+
+</html>

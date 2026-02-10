@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Cabs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item active">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+            <div class="search-widget">
+                <div class="search-options">
+                    <div class="radio-group">
+                        <label><input type="radio" name="cab-type" checked> Outstation One-Way</label>
+                        <label><input type="radio" name="cab-type"> Outstation Round-Trip</label>
+                        <label><input type="radio" name="cab-type"> Hourly Rentals</label>
+                        <label><input type="radio" name="cab-type"> Airport Transfers</label>
+                    </div>
+                </div>
+                <div class="search-inputs" style="position: relative;">
+                    <div class="input-box">
+                        <label class="input-label">FROM</label>
+                        <input type="text" class="input-value" value="Delhi" id="from-city">
+                        <div class="input-sub" id="from-sub">Delhi NCR</div>
+                    </div>
+                    <span class="swap-icon" id="swap-locations" style="left: calc(25% - 15px);">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+                    <div class="input-box">
+                        <label class="input-label">TO</label>
+                        <input type="text" class="input-value" value="Agra" id="to-city">
+                        <div class="input-sub" id="to-sub">Uttar Pradesh</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">PICKUP DATE</label>
+                        <div class="input-value">15 Feb 24</div>
+                        <div class="input-sub">Thursday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">PICKUP TIME</label>
+                        <div class="input-value">10:00 AM</div>
+                        <div class="input-sub">Selection time</div>
+                    </div>
+                </div>
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+        </div>
+
+        <section class="destinations" style="margin-top: 80px;">
+            <h2 class="latoBold blackText">Our Cab Categories</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=500&q=80"
+                        alt="Sedan">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Sedans</h4>
+                        <p>Comfortable 4-seaters</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=500&q=80"
+                        alt="SUV">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">SUVs</h4>
+                        <p>Spacious 6-seaters</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=500&q=80"
+                        alt="Luxury">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Luxury</h4>
+                        <p>Premium 4-seaters</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=500&q=80"
+                        alt="Tempo">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Tempo Travelers</h4>
+                        <p>Groups of 12+</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2 class="latoBold blackText">Why Book Cabs with TravelGo?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Verified Drivers</h3>
+                    <p>All our drivers undergo rigorous background checks and training.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-clock"></i>
+                    <h3>On-Time Arrival</h3>
+                    <p>We guarantee punctuality or you get your next ride free*.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>No Hidden Costs</h3>
+                    <p>Transparent pricing with all taxes and tolls included.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelGo</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Flight Bookings</li>
+                    <li>Hotel Bookings</li>
+                    <li>Holiday Packages</li>
+                    <li>Trains & Buses</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                    <li>Cancellation & Refunds</li>
+                    <li>Travel Guide</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons" style="justify-content: flex-start; gap: 15px; margin-top: 10px;">
+                    <i class="fab fa-facebook-f" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-twitter" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-instagram" style="color: #b2b2b2; cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <p
+            style="margin-top: 40px; text-align: center; color: #b2b2b2; border-top: 1px solid #1a2b4d; padding-top: 20px;">
+            © 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+    <script src="common.js"></script>
+</body>
+
+</html>

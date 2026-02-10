@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Holidays</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item active">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+            <div class="search-widget">
+                <div class="search-inputs" style="position: relative;">
+                    <div class="input-box">
+                        <label class="input-label">FROM CITY</label>
+                        <input type="text" class="input-value" value="New Delhi" id="from-city">
+                        <div class="input-sub" id="from-sub">Delhi</div>
+                    </div>
+                    <span class="swap-icon" id="swap-locations" style="left: calc(25% - 15px);">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+                    <div class="input-box">
+                        <label class="input-label">TO CITY/COUNTRY</label>
+                        <input type="text" class="input-value" value="Dubai" id="to-city">
+                        <div class="input-sub" id="to-sub">UAE</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">DEPARTURE DATE</label>
+                        <div class="input-value">20 Feb 24</div>
+                        <div class="input-sub">Tuesday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">ROOMS & GUESTS</label>
+                        <div class="input-value">1 Room, 2 Adults</div>
+                        <div class="input-sub">Tap to add</div>
+                    </div>
+                </div>
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+
+        <section class="destinations" style="margin-top: 80px;">
+            <h2 class="latoBold blackText">Trending International Packages</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=500&q=80"
+                        alt="Dubai">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Dubai</h4>
+                        <p>5 Nights · ₹45,000</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1506929113675-bc55ef63e9d3?auto=format&fit=crop&w=500&q=80"
+                        alt="Thailand">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Thailand</h4>
+                        <p>4 Nights · ₹32,000</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=500&q=80"
+                        alt="Japan">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Japan</h4>
+                        <p>7 Nights · ₹1,20,000</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1533929736458-ca588d08c8be?auto=format&fit=crop&w=500&q=80"
+                        alt="London">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">London</h4>
+                        <p>6 Nights · ₹95,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2 class="latoBold blackText">Why Book Holiday Packages?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>All-Inclusive</h3>
+                    <p>Flights, hotels, transfers, and sightseeing - all in one package.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Expert Planning</h3>
+                    <p>Curated itineraries by travel experts for the best experience.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-wallet"></i>
+                    <h3>Value for Money</h3>
+                    <p>Save more with bundled deals and exclusive group discounts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelGo</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Flight Bookings</li>
+                    <li>Hotel Bookings</li>
+                    <li>Holiday Packages</li>
+                    <li>Trains & Buses</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                    <li>Cancellation & Refunds</li>
+                    <li>Travel Guide</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons" style="justify-content: flex-start; gap: 15px; margin-top: 10px;">
+                    <i class="fab fa-facebook-f" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-twitter" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-instagram" style="color: #b2b2b2; cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <p
+            style="margin-top: 40px; text-align: center; color: #b2b2b2; border-top: 1px solid #1a2b4d; padding-top: 20px;">
+            © 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+    <script src="common.js"></script>
+</body>
+
+</html>

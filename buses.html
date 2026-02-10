@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Buses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item active">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+            <div class="search-widget">
+                <div class="search-inputs" style="position: relative;">
+                    <div class="input-box">
+                        <label class="input-label">FROM</label>
+                        <input type="text" class="input-value" value="Delhi" id="from-city">
+                        <div class="input-sub" id="from-sub">ISBT Kashmiri Gate</div>
+                    </div>
+                    <span class="swap-icon" id="swap-locations" style="left: calc(33.3% - 15px);">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+                    <div class="input-box">
+                        <label class="input-label">TO</label>
+                        <input type="text" class="input-value" value="Chandigarh" id="to-city">
+                        <div class="input-sub" id="to-sub">Sector 43 Bus Stand</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">TRAVEL DATE</label>
+                        <div class="input-value">08 Feb 24</div>
+                        <div class="input-sub">Thursday</div>
+                    </div>
+                </div>
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+        </div>
+
+        <section class="destinations" style="margin-top: 80px;">
+            <h2 class="latoBold blackText">Popular Bus Routes</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=500&q=80"
+                        alt="Route 1">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Delhi → Jaipur</h4>
+                        <p>Starting @ ₹399</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=500&q=80"
+                        alt="Route 2">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Mumbai → Pune</h4>
+                        <p>Starting @ ₹250</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1600320844674-51978585de9d?auto=format&fit=crop&w=500&q=80"
+                        alt="Route 3">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Bengaluru → Goa</h4>
+                        <p>Starting @ ₹799</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1549423126-77864197e974?auto=format&fit=crop&w=500&q=80"
+                        alt="Route 4">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Chennai → Bengaluru</h4>
+                        <p>Starting @ ₹450</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2 class="latoBold blackText">Why Book Buses with TravelGo?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <i class="fas fa-bus-alt"></i>
+                    <h3>Verified Operators</h3>
+                    <p>We only partner with highly-rated and reliable bus operators.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-calendar-check"></i>
+                    <h3>Easy Cancellation</h3>
+                    <p>Instantly cancel or reschedule your bus tickets online.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-percent"></i>
+                    <h3>Exclusive Discounts</h3>
+                    <p>Get the best prices with our app-only bus coupons.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelGo</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Flight Bookings</li>
+                    <li>Hotel Bookings</li>
+                    <li>Holiday Packages</li>
+                    <li>Trains & Buses</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                    <li>Cancellation & Refunds</li>
+                    <li>Travel Guide</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons" style="justify-content: flex-start; gap: 15px; margin-top: 10px;">
+                    <i class="fab fa-facebook-f" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-twitter" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-instagram" style="color: #b2b2b2; cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <p
+            style="margin-top: 40px; text-align: center; color: #b2b2b2; border-top: 1px solid #1a2b4d; padding-top: 20px;">
+            © 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+    <script src="common.js"></script>
+</body>
+
+</html>

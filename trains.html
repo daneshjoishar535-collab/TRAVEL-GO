@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Trains</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item active">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+
+            <div class="search-widget">
+                <div class="search-options">
+                    <div class="radio-group">
+                        <label><input type="radio" name="train-opt" checked> Book Train Tickets</label>
+                        <label><input type="radio" name="train-opt"> Check PNR Status</label>
+                        <label><input type="radio" name="train-opt"> Live Train Status</label>
+                    </div>
+                </div>
+
+                <div class="search-inputs" style="position: relative;">
+                    <div class="input-box">
+                        <label class="input-label">FROM</label>
+                        <input type="text" class="input-value" value="Delhi" id="from-city">
+                        <div class="input-sub" id="from-sub">NDLS, New Delhi Railway Station</div>
+                    </div>
+                    <span class="swap-icon" id="swap-locations" style="left: calc(25% - 15px);">
+                        <i class="fas fa-exchange-alt"></i>
+                    </span>
+                    <div class="input-box">
+                        <label class="input-label">TO</label>
+                        <input type="text" class="input-value" value="Mumbai" id="to-city">
+                        <div class="input-sub" id="to-sub">BCT, Mumbai Central</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">TRAVEL DATE</label>
+                        <div class="input-value">10 Feb 24</div>
+                        <div class="input-sub">Saturday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">CLASS</label>
+                        <div class="input-value">All Class</div>
+                        <div class="input-sub">Tap to select class</div>
+                    </div>
+                </div>
+
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+
+        <section class="destinations" style="margin-top: 80px;">
+            <h2 class="latoBold blackText">Popular Train Routes</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=500&q=80"
+                        alt="Delhi-Mumbai">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Delhi → Mumbai</h4>
+                        <p>Starting @ ₹450</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?auto=format&fit=crop&w=500&q=80"
+                        alt="Bengaluru-Chennai">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Bengaluru → Chennai</h4>
+                        <p>Starting @ ₹250</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1620404146059-86fbf8274640?auto=format&fit=crop&w=500&q=80"
+                        alt="Kolkata-Delhi">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Kolkata → Delhi</h4>
+                        <p>Starting @ ₹550</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1532105956626-9569c03602f6?auto=format&fit=crop&w=500&q=80"
+                        alt="Mumbai-Pune">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Mumbai → Pune</h4>
+                        <p>Starting @ ₹150</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers-section">
+            <h2 class="latoBold blackText">Train Offers</h2>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <img src="https://images.unsplash.com/photo-1554224155-1696413565d3?auto=format&fit=crop&w=300&q=80"
+                        class="offer-img" alt="Offer">
+                    <div class="offer-details">
+                        <h3 class="latoBold">Zero Cancellation Fee</h3>
+                        <p>On your first train booking with TravelGo</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p style="text-align: center;">© 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+
+    <script src="common.js"></script>
+</body>
+
+</html>

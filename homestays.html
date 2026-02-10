@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelGo - Homestays</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <span class="logo-travel">Travel</span><span class="logo-go">Go</span>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#" class="nav-item">
+                <i class="fas fa-percentage"></i>
+                <span>Super Offers</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-briefcase"></i>
+                <span>Introducing myBiz</span>
+            </a>
+            <a href="#" class="nav-item">
+                <i class="fas fa-suitcase"></i>
+                <span>My Trips</span>
+            </a>
+            <a href="login.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>Login or Create Account</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <div class="category-switcher">
+                <a href="index.html" class="cat-item">
+                    <i class="fas fa-plane"></i>
+                    <span>Flights</span>
+                </a>
+                <a href="hotels.html" class="cat-item">
+                    <i class="fas fa-hotel"></i>
+                    <span>Hotels</span>
+                </a>
+                <a href="homestays.html" class="cat-item active">
+                    <i class="fas fa-home"></i>
+                    <span>Homestays</span>
+                </a>
+                <a href="holidays.html" class="cat-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Holidays</span>
+                </a>
+                <a href="trains.html" class="cat-item">
+                    <i class="fas fa-train"></i>
+                    <span>Trains</span>
+                </a>
+                <a href="buses.html" class="cat-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Buses</span>
+                </a>
+                <a href="cabs.html" class="cat-item">
+                    <i class="fas fa-taxi"></i>
+                    <span>Cabs</span>
+                </a>
+            </div>
+            <div class="search-widget">
+                <div class="search-inputs">
+                    <div class="input-box" style="flex: 2;">
+                        <label class="input-label">CITY, PROPERTY NAME OR LOCATION</label>
+                        <input type="text" class="input-value" value="Manali">
+                        <div class="input-sub">Himachal Pradesh</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">CHECK-IN</label>
+                        <div class="input-value">12 Feb 24</div>
+                        <div class="input-sub">Monday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">CHECK-OUT</label>
+                        <div class="input-value">15 Feb 24</div>
+                        <div class="input-sub">Thursday</div>
+                    </div>
+                    <div class="input-box">
+                        <label class="input-label">GUESTS</label>
+                        <div class="input-value">2 Adults</div>
+                        <div class="input-sub">Tap to add</div>
+                    </div>
+                </div>
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+        <section class="destinations" style="margin-top: 80px;">
+            <h2 class="latoBold blackText">Popular Homestays in India</h2>
+            <div class="dest-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=500&q=80"
+                        alt="Beach Hut">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Beachfront Huts</h4>
+                        <p>Goa, India</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=500&q=80"
+                        alt="Mountain Cabin">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Mountain Cabins</h4>
+                        <p>Manali, India</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=80"
+                        alt="Luxury Villa">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">Heritage Villas</h4>
+                        <p>Udaipur, India</p>
+                    </div>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=500&q=80"
+                        alt="Apartment">
+                    <div class="dest-overlay">
+                        <h4 class="latoBold">City Apartments</h4>
+                        <p>Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose">
+            <h2 class="latoBold blackText">Why Book Homestays with TravelGo?</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <i class="fas fa-home"></i>
+                    <h3>Home-like Comfort</h3>
+                    <p>Enjoy the warmth and privacy of a real home while you travel.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Local Flavors</h3>
+                    <p>Get authentic local meals prepared by your hosts.</p>
+                </div>
+                <div class="why-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Unique Locations</h3>
+                    <p>Stay in offbeat locations that hotels can't reach.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>TravelGo</h4>
+                <ul>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy Policy</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li>Flight Bookings</li>
+                    <li>Hotel Bookings</li>
+                    <li>Holiday Packages</li>
+                    <li>Trains & Buses</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                    <li>Cancellation & Refunds</li>
+                    <li>Travel Guide</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-icons" style="justify-content: flex-start; gap: 15px; margin-top: 10px;">
+                    <i class="fab fa-facebook-f" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-twitter" style="color: #b2b2b2; cursor: pointer;"></i>
+                    <i class="fab fa-instagram" style="color: #b2b2b2; cursor: pointer;"></i>
+                </div>
+            </div>
+        </div>
+        <p
+            style="margin-top: 40px; text-align: center; color: #b2b2b2; border-top: 1px solid #1a2b4d; padding-top: 20px;">
+            © 2024 TravelGo Pvt. Ltd.</p>
+    </footer>
+    <script src="common.js"></script>
+</body>
+
+</html>
